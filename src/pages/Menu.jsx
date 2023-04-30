@@ -1,9 +1,10 @@
-import ramen from '../assets/menu/ramen.jpg';
-import ramenPika from '../assets/menu/ramen poulet pika.jpg';
-import sushi from '../assets/menu/sushi.jpg';
-import sushi2 from '../assets/menu/sushi2.jpg';
-import sushi4 from '../assets/menu/sushi4.jpg';
-import sushiYoda from '../assets/menu/sushi-yoda-red.jpg';
+import ramen from '../assets/menu/ramen.webp';
+import ramenPika from '../assets/menu/ramen-poulet-pika.webp';
+import sushi from '../assets/menu/sushi.webp';
+import sushi2 from '../assets/menu/sushi2.webp';
+import sushi4 from '../assets/menu/sushi4.webp';
+import sushiYoda from '../assets/menu/sushi-yoda-red.webp';
+import './Menu.css';
 
 const Menu = () => {
   return (
@@ -24,7 +25,7 @@ const Menu = () => {
               />
               <div className='absolute inset-0 flex flex-col items-center justify-center p-2 transition duration-500 opacity-0 group-hover:opacity-100'>
                 <span className='p-1 text-2xl font-bold'>Ramen Bulbasaur</span>
-                <p className='mt-2 text-sm text-center'>
+                <p className='mt-2 text-sm text-center desc'>
                   Ramen avec des tranches de{' '}
                   <span className='italic font-semibold text-gray-900'>
                     poulet
@@ -65,7 +66,7 @@ const Menu = () => {
                 <span className='p-1 text-2xl font-bold'>
                   Sushis végétarien
                 </span>
-                <p className='mt-2 text-sm text-center'>
+                <p className='mt-2 text-sm text-center desc'>
                   Sushis aux riz accompagné de{' '}
                   <span className='italic font-semibold text-gray-900'>
                     concombre
@@ -101,7 +102,7 @@ const Menu = () => {
               <div className='absolute inset-0 flex flex-col items-center justify-center p-2 transition duration-500 opacity-0 group-hover:opacity-100'>
                 <span className='p-1 text-2xl font-bold'>Ramen Pikachu</span>
 
-                <p className='mt-2 text-center'>
+                <p className='mt-2 text-center desc'>
                   Avec ses morceaux de{' '}
                   <span className='italic font-semibold text-gray-900'>
                     poulets
@@ -114,7 +115,7 @@ const Menu = () => {
                   de tout âges.
                 </p>
 
-                <div className='pb-2 text-sm text-center'>
+                <div className='pb-2 text-sm text-center desc'>
                   Vous pourrez manger{' '}
                   <span className='italic font-semibold text-gray-900'>
                     Pikachu
@@ -150,7 +151,7 @@ const Menu = () => {
             <div className='absolute inset-0 flex flex-col items-center justify-center p-2 transition duration-500 opacity-0 group-hover:opacity-100'>
               <span className='p-1 text-2xl font-bold'>Sushis Pokéballs</span>
 
-              <p className='mt-2 text-center'>
+              <p className='mt-2 text-center desc'>
                 Sushis en forme de{' '}
                 <span className='italic font-semibold text-gray-900'>
                   Pokéballs
@@ -195,7 +196,7 @@ const Menu = () => {
               />
               <div className='absolute inset-0 flex flex-col items-center justify-center p-2 transition duration-500 opacity-0 group-hover:opacity-100'>
                 <span className='p-1 text-2xl font-bold'>Sushi Yoda</span>
-                <p className='mt-2 text-sm text-center'>
+                <p className='mt-2 text-sm text-center desc'>
                   Sushis aux riz en forme de
                   <span className='italic font-semibold text-gray-900'>
                     Pokéballs
@@ -225,7 +226,7 @@ const Menu = () => {
               />
               <div className='absolute inset-0 flex flex-col items-center justify-center p-2 transition duration-500 opacity-0 group-hover:opacity-100'>
                 <span className='p-1 text-2xl font-bold'>Sushi Yoda</span>
-                <p className='mt-2 text-sm text-center'>
+                <p className='mt-2 text-sm text-center desc'>
                   Sushis aux riz accompagné de saumon en formes d&apos;étoiles
                   avec le sushi principal à{' '}
                   <span className='italic font-semibold text-gray-900'>

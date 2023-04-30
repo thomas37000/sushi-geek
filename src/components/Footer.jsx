@@ -5,7 +5,11 @@ const Footer = () => {
         <nav aria-label='Footer Navigation - Support'>
           <ul className='flex flex-wrap justify-center gap-4 text-xs lg:justify-end'>
             <li>
-              <a href='/' style={{ fontFamily: 'Shojumaru' }} className="text-red-500">
+              <a
+                href='/'
+                style={{ fontFamily: 'Shojumaru' }}
+                className='text-red-500'
+              >
                 Sushi Geek
               </a>
             </li>
@@ -40,6 +44,8 @@ const Footer = () => {
         </nav>
 
         <ul className='flex justify-center gap-6 mt-8 sm:mt-0 lg:justify-end'>
+          <li>Ouvert du Lundi au Samedi au 2 Rue du Couëdic, 44000 Nantes</li>
+          <li>Horaires : 10h / 15h - 18h / 23h</li>
           <li>
             <a
               href='#facebook'

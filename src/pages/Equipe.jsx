@@ -1,8 +1,8 @@
-import chef from '../assets/personnel/chef.jpg';
-import chef2 from '../assets/personnel/chef2.jpg';
-import cuisiniere from '../assets/personnel/cuisiniere.jpg';
-import sallePokemon from '../assets/restaurant/sallePokemon.jpg';
-import salleStarWars from '../assets/restaurant/salleStarWars.jpg';
+import chef from '../assets/personnel/chef.webp';
+import chef2 from '../assets/personnel/chef2.webp';
+import cuisiniere from '../assets/personnel/cuisiniere.webp';
+import sallePokemon from '../assets/restaurant/sallePokemon.webp';
+import salleStarWars from '../assets/restaurant/salleStarWars.webp';
 
 const Equipe = () => {
   return (
