@@ -44,8 +44,8 @@ const Footer = () => {
         </nav>
 
         <ul className='flex justify-center gap-6 mt-8 sm:mt-0 lg:justify-end'>
-          <li>Ouvert du Lundi au Samedi au 2 Rue du Couëdic, 44000 Nantes</li>
-          <li>Horaires : 10h / 15h - 18h / 23h</li>
+          <li className="text-sm">Ouvert du Lundi au Samedi au 2 Rue du Couëdic, 44000 Nantes</li>
+          <li className="text-sm">Horaires : 10h / 15h - 18h / 23h</li>
           <li>
             <a
               href='#facebook'
