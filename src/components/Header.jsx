@@ -2,18 +2,25 @@ import logoSvg from '../assets/logo.svg';
 import './Header.css';
 
 const Header = () => {
+  const reservationLink = () => {
+    const lien = document.getElementById('reservation');
+    if (lien) {
+      lien.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header>
       {/* <!-- Navigation bar --> */}
       <nav
-        className='relative flex items-center justify-between w-full py-2 bg-white shadow-lg text-neutral-600 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start'
+        className='relative flex items-center justify-between w-full py-2 bg-white shadow-lg text-neutral-600 hover:text-neutral-700 focus:text-red-500 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start'
         data-te-navbar-ref
       >
         <div className='flex flex-wrap items-center justify-between w-full px-3'>
           <div className='flex items-center'>
             {/* <!-- Hamburger menu button --> */}
             <button
-              className='px-2 text-xl leading-none transition-shadow duration-150 ease-in-out bg-transparent border-0 hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden'
+              className='px-2 text-xl leading-none transition-shadow duration-150 ease-in-out bg-transparent border-0 hover:text-neutral-700 focus:text-red-500 dark:hover:text-white dark:focus:text-white lg:hidden'
               type='button'
               data-te-collapse-init
               data-te-target='#navbarSupportedContentX'
@@ -53,7 +60,7 @@ const Header = () => {
             >
               <li>
                 <a
-                  className='logo block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90 text-red-500'
+                  className='logo block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-red-500 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90 text-red-500'
                   href='/'
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -64,7 +71,7 @@ const Header = () => {
               </li>
               <li className='mb-4 lg:mb-0 lg:pr-2' data-te-nav-item-ref>
                 <a
-                  className='block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
+                  className='block transition duration-150 ease-in-out hover:text-red-500 focus:text-red-500 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
                   href='/'
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -75,7 +82,7 @@ const Header = () => {
               </li>
               <li className='mb-4 lg:mb-0 lg:pr-2' data-te-nav-item-ref>
                 <a
-                  className='block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
+                  className='block transition duration-150 ease-in-out hover:text-red-500 focus:text-red-500 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
                   href='#menu'
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -86,7 +93,7 @@ const Header = () => {
               </li>
               <li className='mb-4 lg:mb-0 lg:pr-2' data-te-nav-item-ref>
                 <a
-                  className='block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
+                  className='block transition duration-150 ease-in-out hover:text-red-500 focus:text-red-500 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
                   href='#equipe'
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -97,7 +104,18 @@ const Header = () => {
               </li>
               <li className='mb-4 lg:mb-0 lg:pr-2' data-te-nav-item-ref>
                 <a
-                  className='block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
+                  className='block transition duration-150 ease-in-out hover:text-red-500 focus:text-red-500 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
+                  href='#reservation'
+                  data-te-nav-link-ref
+                  data-te-ripple-init
+                  data-te-ripple-color='light'
+                >
+                  Réserver
+                </a>
+              </li>
+              <li className='mb-4 lg:mb-0 lg:pr-2' data-te-nav-item-ref>
+                <a
+                  className='block transition duration-150 ease-in-out hover:text-red-500 focus:text-red-500 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90'
                   href='#contact'
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -130,6 +148,7 @@ const Header = () => {
                 className='inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
                 data-te-ripple-init
                 data-te-ripple-color='light'
+                onClick={reservationLink}
               >
                 Réservez
               </button>

@@ -12,6 +12,9 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
       },
+      translate: {
+        4.25: '17rem',
+      },
     },
   },
   plugins: [],

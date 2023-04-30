@@ -38,7 +38,7 @@ const Contact = () => {
           <div className='w-full px-3 mb-6 md:w-1/2 md:mb-0'>
             <label
               className='block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase'
-              htmlFor='grid-first-name'
+              htmlFor='prénom'
             >
               Prénom <span className='text-red-400'>*</span>
             </label>
@@ -58,7 +58,7 @@ const Contact = () => {
           <div className='w-full px-3 md:w-1/2'>
             <label
               className='block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase'
-              htmlFor='grid-last-name'
+              htmlFor='nom'
             >
               Nom <span className='text-red-400'>*</span>
             </label>
@@ -80,7 +80,7 @@ const Contact = () => {
           <div className='w-full px-3'>
             <label
               className='block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase'
-              htmlFor='grid-password'
+              htmlFor='email'
             >
               Email <span className='text-red-400'>*</span>
             </label>
