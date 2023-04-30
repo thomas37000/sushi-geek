@@ -1,10 +1,9 @@
-import ramen from '../assets/ramen.jpg';
-import ramenPika from '../assets/ramen poulet pika.jpg';
-import sushi from '../assets/sushi.jpg';
-import sushi2 from '../assets/sushi2.jpg';
-import sushi4 from '../assets/sushi4.jpg';
-import sushiYoda from '../assets/sushi-yoda-red.jpg';
-import logoSvg from '../assets/logo.svg';
+import ramen from '../assets/menu/ramen.jpg';
+import ramenPika from '../assets/menu/ramen poulet pika.jpg';
+import sushi from '../assets/menu/sushi.jpg';
+import sushi2 from '../assets/menu/sushi2.jpg';
+import sushi4 from '../assets/menu/sushi4.jpg';
+import sushiYoda from '../assets/menu/sushi-yoda-red.jpg';
 
 const Menu = () => {
   return (
