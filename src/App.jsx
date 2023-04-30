@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import './App.css';
+import Header from './components/Header';
 
-function App() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+export default function App() {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
-
-export default App;
