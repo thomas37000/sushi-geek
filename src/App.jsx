@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Menu from './pages/Menu';
 import Equipe from './pages/Equipe';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Header />
       <Menu />
       <Equipe />
+      <Contact />
       <Footer />
     </div>
   );

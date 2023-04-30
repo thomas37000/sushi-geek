@@ -121,7 +121,7 @@ const Header = () => {
               className='hover:animate-spin-slow'
             />
             <div className='px-6 text-center text-white md:px-12'>
-              <h1 className='mb-6 text-5xl font-bold'>Sushi Nerd</h1>
+              <h1 className='mb-6 text-5xl font-bold'>Sushi Geek</h1>
               <h3 className='mb-8 text-3xl font-bold'>
                 Un voyage culinaire geek et délicieux
               </h3>
